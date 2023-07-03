@@ -1,0 +1,15 @@
+<form #myForm> 
+    <p-card header="Add Section" [style]="{ width: '100%' }" class="justify-content-center">
+        <div class="flex justify-content-center">
+            <div class="flex flex-column gap-2">
+                <label htmlFor="header">Section Header</label>
+                <input pInputText id="header" [style]="{ width: '100%' }" #inputone/>
+            </div>
+            <div class="flex flex-column gap-2">
+                <label htmlFor="details">Section Details</label>
+                <textarea rows="5" id="details" [style]="{ width: '100%' }" cols="30" pInputTextarea #inputtwo></textarea>
+            </div>
+            <p-button label="Add" styleClass="mt-4" (click)="clickAndSend()"></p-button>
+        </div>
+    </p-card>
+</form>
